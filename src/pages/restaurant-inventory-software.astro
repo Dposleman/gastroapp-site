@@ -1,0 +1,85 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Inventory Software — GastroApp"
+  description="Restaurant inventory software for better stock visibility, reduced waste, food waste control, AI-assisted stock workflows and stronger kitchen operations."
+  pathname="/restaurant-inventory-software"
+>
+  <PageHero
+    eyebrow="Inventory Software"
+    title="Restaurant inventory software with better operational visibility"
+    description="Track stock more clearly, reduce avoidable waste, monitor food waste and connect inventory to the rest of your kitchen workflow with AI-assisted operational tools."
+  />
+
+  <ContentSection
+    title="Why inventory control matters"
+    paragraphs={[
+      "Inventory problems do not only affect stock. They affect prep planning, production, purchasing and service quality. When stock visibility is weak, restaurants lose time and money trying to react manually.",
+      "GastroApp helps restaurant teams create more reliable inventory workflows by bringing stock into the same operational system as recipes, production and daily execution.",
+      "That means fewer blind spots, stronger coordination and better visibility across the kitchen."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What better inventory software helps restaurants do"
+    items={[
+      "Track stock in a more structured and visible way.",
+      "Reduce preventable waste caused by poor visibility.",
+      "Track food waste to reduce operational losses.",
+      "Support production planning with better operational information.",
+      "Keep management and kitchen teams aligned around inventory status.",
+      "Replace fragmented spreadsheets and manual follow-up processes.",
+      "Create a stronger operational foundation as the restaurant grows."
+    ]}
+  />
+
+  <ContentSection
+    title="AI features for smarter stock workflows"
+    paragraphs={[
+      "GastroApp goes beyond traditional inventory software by adding AI-powered operational features that help restaurants work faster and with more intelligence.",
+      "The AI receipt reader and importer helps convert supplier receipts and purchase documents directly into stock workflows, reducing manual entry and saving staff time.",
+      "AI learning helps the system become more useful over time by supporting smarter operational understanding, while the AI plating design feature adds creative support for kitchens that want to combine operational discipline with innovation."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="AI-assisted inventory and operations"
+    items={[
+      "AI receipt scanner for faster stock import workflows.",
+      "AI-powered receipt reading to reduce manual data entry.",
+      "AI learning features that support smarter operational workflows.",
+      "AI plating design support for more creative kitchen teams.",
+      "Better connection between purchasing, stock and production workflows.",
+      "A more modern restaurant software experience built around real operations."
+    ]}
+  />
+
+  <ContentSection
+    title="Food waste control as part of inventory management"
+    paragraphs={[
+      "Food waste is not only a sustainability issue. It is also an operational and financial issue. Restaurants need a clearer way to understand where waste is happening and how it connects to stock, prep and execution.",
+      "GastroApp helps make food waste more visible as part of the broader inventory workflow, so teams can reduce unnecessary loss and operate with better discipline.",
+      "That makes inventory software more valuable, because it supports both cost control and stronger day-to-day decision making."
+    ]}
+  />
+
+  <ContentSection
+    title="Inventory should be part of operations, not separate from them"
+    paragraphs={[
+      "The biggest weakness of many inventory tools is that they live outside the actual kitchen workflow. GastroApp connects inventory to the wider operational system so teams can make better decisions with less friction.",
+      "For restaurants that want stronger control, inventory software should not only track numbers. It should support execution.",
+      "With GastroApp, restaurants get both stronger inventory visibility and AI-assisted workflows that help operations become faster, cleaner and more scalable."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Want better inventory control in your restaurant?"
+    text="GastroApp helps restaurants build more visible, more reliable and more structured stock workflows with food waste control and AI-assisted operational features."
+  />
+</MainLayout>

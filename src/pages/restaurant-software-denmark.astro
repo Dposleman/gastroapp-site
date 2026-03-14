@@ -1,0 +1,85 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Software Denmark — GastroApp"
+  description="Restaurant software for Denmark focused on kitchen operations, inventory control, food waste management, production planning, AI-assisted workflows and team coordination."
+  pathname="/restaurant-software-denmark"
+>
+  <PageHero
+    eyebrow="Restaurant Software Denmark"
+    title="Restaurant software for modern kitchens in Denmark"
+    description="GastroApp is built for restaurants that want stronger operational structure, better visibility, food waste control, AI-assisted workflows and a more professional way to manage kitchen operations."
+  />
+
+  <ContentSection
+    title="A better way to run restaurant operations in Denmark"
+    paragraphs={[
+      "Many restaurant teams still rely on spreadsheets, notes, manual stock checks and fragmented communication. That may work for a while, but it creates friction as operations become more demanding.",
+      "GastroApp helps restaurants in Denmark centralize recipes, inventory, production planning, events, food waste and team communication inside one structured platform.",
+      "The result is not just cleaner software. The result is better operational clarity, more reliable execution and less wasted time across the kitchen workflow."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="Why restaurants in Denmark need more structured software"
+    items={[
+      "Stock visibility helps reduce preventable waste and missed items.",
+      "Production planning becomes more reliable when workflows are centralized.",
+      "Recipe structure improves consistency across kitchen teams.",
+      "Food waste tracking supports more sustainable restaurant operations.",
+      "Event preparation becomes easier when all operational details live in one place.",
+      "Team communication improves when it is tied to the actual workflow.",
+      "Management gets a clearer view of what is planned, pending and completed."
+    ]}
+  />
+
+  <ContentSection
+    title="AI-powered restaurant software for Denmark"
+    paragraphs={[
+      "GastroApp is not only about organizing workflows. It also introduces AI-assisted features that help restaurants modernize how they operate.",
+      "The AI receipt reader and importer helps move supplier receipts and purchase information directly into stock workflows, reducing manual work and making inventory updates faster.",
+      "AI learning supports more intelligent system behavior over time, while AI plating design adds creative support for restaurants that want both operational excellence and culinary innovation."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="AI features included in GastroApp"
+    items={[
+      "AI receipt scanner for direct stock-related import workflows.",
+      "AI-powered receipt reading to reduce repetitive admin work.",
+      "AI learning features that support smarter operations over time.",
+      "AI plating design assistant for culinary presentation ideas.",
+      "A more modern restaurant software workflow for Denmark.",
+      "Operational structure combined with intelligent assistance."
+    ]}
+  />
+
+  <ContentSection
+    title="Food waste control matters in modern restaurant operations"
+    paragraphs={[
+      "For restaurants in Denmark, food waste is both a cost issue and a sustainability issue. Better visibility over waste helps teams reduce losses and operate more responsibly.",
+      "GastroApp includes food waste control as part of a more complete restaurant operations platform, helping teams connect waste to stock, prep and execution.",
+      "That makes the software more useful for restaurants that want stronger operational discipline and a more modern way to manage daily workflows."
+    ]}
+  />
+
+  <ContentSection
+    title="Built for operational control, not just admin"
+    paragraphs={[
+      "GastroApp is not designed as another generic dashboard. It is designed around the practical needs of restaurant teams that need to prep, execute and coordinate under pressure.",
+      "For restaurants in Denmark, that means one system where kitchen operations become easier to structure and easier to manage as the business grows.",
+      "With GastroApp, that structure is strengthened by food waste control and AI-assisted tools that reduce friction and help restaurants operate with more confidence."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Looking for restaurant software in Denmark?"
+    text="GastroApp helps restaurants move from fragmented operations to a cleaner, more structured and more AI-assisted system with stronger food waste visibility."
+  />
+</MainLayout>

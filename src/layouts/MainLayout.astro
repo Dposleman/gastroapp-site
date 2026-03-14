@@ -1,0 +1,88 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  pathname?: string;
+}
+
+const {
+  title = "GastroApp — Restaurant Operations Platform",
+  description = "Restaurant operations platform for kitchen management, inventory, production planning and team coordination.",
+  pathname = "/",
+} = Astro.props;
+
+const siteUrl = "https://gastroapp.dk";
+const pageUrl = new URL(pathname, siteUrl).toString();
+const ogImage = `${siteUrl}/og-image.png`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#050816" />
+    <link rel="canonical" href={pageUrl} />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GastroApp" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={ogImage} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+  </head>
+
+  <body class="min-h-screen text-white antialiased">
+    <div class="fixed inset-0 -z-20 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.10),transparent_28%),radial-gradient(circle_at_80%_10%,rgba(59,130,246,0.10),transparent_24%),radial-gradient(circle_at_20%_90%,rgba(168,85,247,0.08),transparent_28%),linear-gradient(180deg,#050816_0%,#060914_100%)]"></div>
+    <div class="fixed inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:radial-gradient(circle_at_center,black,transparent_80%)]"></div>
+
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/70 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <a href="/" class="flex items-center gap-3">
+          <div class="glass-card flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/10 shadow-[0_0_30px_rgba(34,211,238,0.10)]">
+            <img src="/logo.png" alt="GastroApp logo" class="h-7 w-7 object-contain" />
+          </div>
+          <div>
+            <div class="text-lg font-semibold tracking-tight">GastroApp</div>
+            <div class="text-xs text-white/50">Restaurant Operations Platform</div>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-8 md:flex">
+          <a href="/restaurant-software-denmark" class="text-sm text-white/70 transition hover:text-white">Denmark</a>
+          <a href="/restaurant-inventory-software" class="text-sm text-white/70 transition hover:text-white">Inventory</a>
+          <a href="/pricing" class="text-sm text-white/70 transition hover:text-white">Pricing</a>
+          <a
+            href="https://app.gastroapp.dk/login"
+            class="rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:border-cyan-300/30 hover:bg-cyan-400/15"
+          >
+            Login
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="border-t border-white/10 py-10 text-center text-sm text-white/50">
+      © {new Date().getFullYear()} GastroApp
+    </footer>
+  </body>
+</html>
