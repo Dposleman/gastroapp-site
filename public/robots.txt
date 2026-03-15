@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gastroapp.dk/sitemap.xml
+Sitemap: https://gastroapp.dk/sitemap-index.xml
