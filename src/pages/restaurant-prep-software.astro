@@ -1,0 +1,75 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Restaurant Prep Software",
+  url: "https://gastroapp.dk/restaurant-prep-software",
+  description:
+    "Restaurant prep software for stronger prep planning, better coordination and more reliable production workflows.",
+};
+---
+
+<MainLayout
+  title="Restaurant Prep Software — GastroApp"
+  description="Restaurant prep software for stronger prep planning, better coordination and more reliable production workflows."
+  pathname="/restaurant-prep-software"
+  schema={schema}
+>
+  <PageHero
+    eyebrow="Prep Software"
+    title="Restaurant prep software for clearer kitchen execution"
+    description="GastroApp helps kitchens build better prep workflows by connecting recipes, production planning, inventory and team coordination."
+  />
+
+  <ContentSection
+    title="Prep becomes easier when the workflow is structured"
+    paragraphs={[
+      "Prep is one of the most important operational layers in a restaurant. If prep is unclear or poorly coordinated, the effects spread into production, stock usage and service readiness.",
+      "Many kitchens still rely on informal prep lists and manual follow-up, which creates friction and inconsistency.",
+      "Prep software should make it easier for teams to know what needs to be done, what is pending and how it connects to the rest of operations."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What better prep software helps restaurants do"
+    items={[
+      "Improve prep visibility across the team.",
+      "Connect prep to production planning.",
+      "Reduce avoidable confusion during shifts.",
+      "Strengthen accountability around preparation tasks.",
+      "Support more consistent kitchen execution.",
+      "Build a more reliable prep system over time."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp connects prep to production and inventory"
+    paragraphs={[
+      "GastroApp helps restaurants move beyond basic prep notes by connecting preparation workflows to production planning, inventory visibility and kitchen coordination.",
+      "That creates a more useful prep system because it reflects the broader reality of the kitchen workflow.",
+      "As a result, prep becomes more visible, more reliable and easier to scale."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-production-software", label: "Restaurant Production Software" },
+      { href: "/kitchen-management-software", label: "Kitchen Management Software" },
+      { href: "/learn/restaurant-prep-list-system", label: "How to build a better restaurant prep list system" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need stronger prep workflows in your restaurant?"
+    text="GastroApp helps restaurant teams improve prep planning and connect it to the wider kitchen workflow."
+  />
+</MainLayout>

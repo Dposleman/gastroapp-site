@@ -1,0 +1,75 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "AI Restaurant Software",
+  url: "https://gastroapp.dk/ai-restaurant-software",
+  description:
+    "AI restaurant software for smarter stock workflows, operational learning and AI-assisted kitchen support.",
+};
+---
+
+<MainLayout
+  title="AI Restaurant Software — GastroApp"
+  description="AI restaurant software for smarter stock workflows, operational learning and AI-assisted kitchen support."
+  pathname="/ai-restaurant-software"
+  schema={schema}
+>
+  <PageHero
+    eyebrow="AI Restaurant Software"
+    title="AI restaurant software for smarter kitchen operations"
+    description="GastroApp combines restaurant operations software with AI-assisted workflows for receipts, learning and plating support."
+  />
+
+  <ContentSection
+    title="AI should support real restaurant workflows"
+    paragraphs={[
+      "Restaurants do not benefit from AI just because it sounds modern. The value appears when AI reduces friction, saves time and supports more useful operational decisions.",
+      "GastroApp applies AI to restaurant workflows where it can actually improve execution.",
+      "That includes receipt reading, stock-related data input, AI learning features and plating support."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="AI-assisted features in GastroApp"
+    items={[
+      "AI receipt reader for stock workflows.",
+      "AI-assisted stock import support.",
+      "AI learning features for smarter operations over time.",
+      "AI plating design support for culinary presentation ideas.",
+      "Reduced repetitive manual admin work.",
+      "A more modern restaurant software experience."
+    ]}
+  />
+
+  <ContentSection
+    title="AI works best inside a structured operations platform"
+    paragraphs={[
+      "The strongest AI workflows are not isolated tools. They become more valuable when connected to inventory, recipes, production and operational visibility.",
+      "That is why GastroApp combines AI features with a broader operations platform instead of treating them as standalone gimmicks.",
+      "This helps restaurants modernize without adding unnecessary complexity."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-software", label: "Restaurant Software" },
+      { href: "/restaurant-inventory-software", label: "Restaurant Inventory Software" },
+      { href: "/restaurant-food-waste-software", label: "Restaurant Food Waste Software" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Interested in AI restaurant software?"
+    text="GastroApp combines structured restaurant operations with practical AI-assisted workflows."
+  />
+</MainLayout>

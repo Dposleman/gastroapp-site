@@ -1,0 +1,75 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Restaurant Food Cost Control Software",
+  url: "https://gastroapp.dk/restaurant-food-cost-control-software",
+  description:
+    "Food cost control software for restaurants focused on inventory visibility, waste reduction and stronger operational discipline.",
+};
+---
+
+<MainLayout
+  title="Restaurant Food Cost Control Software — GastroApp"
+  description="Food cost control software for restaurants focused on inventory visibility, waste reduction and stronger operational discipline."
+  pathname="/restaurant-food-cost-control-software"
+  schema={schema}
+>
+  <PageHero
+    eyebrow="Food Cost Control"
+    title="Restaurant food cost control software"
+    description="GastroApp helps restaurants improve food cost control through stronger inventory visibility, food waste monitoring and better production workflows."
+  />
+
+  <ContentSection
+    title="Food cost control starts with visibility"
+    paragraphs={[
+      "Restaurants cannot improve food cost control without clear operational visibility. Stock, production, waste and prep all affect the real cost structure of the kitchen.",
+      "When those workflows are fragmented, teams lose the ability to spot avoidable loss early.",
+      "Software should make cost-related patterns easier to understand and easier to act on."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="How GastroApp supports food cost control"
+    items={[
+      "Inventory visibility across daily operations.",
+      "Food waste monitoring and loss reduction.",
+      "Better connection between stock and production.",
+      "Stronger prep planning workflows.",
+      "More useful operational reporting.",
+      "Clearer cost-related decision support."
+    ]}
+  />
+
+  <ContentSection
+    title="Cost control is an operations problem"
+    paragraphs={[
+      "Food cost control improves when kitchens become more structured, not just when managers review reports after the fact.",
+      "GastroApp helps restaurants strengthen the workflows that influence food cost every day.",
+      "That makes cost control more practical and more sustainable over time."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-inventory-software", label: "Restaurant Inventory Software" },
+      { href: "/restaurant-food-waste-software", label: "Restaurant Food Waste Software" },
+      { href: "/restaurant-operations-platform", label: "Restaurant Operations Platform" },
+      { href: "/learn/reduce-food-waste-restaurant", label: "How to reduce food waste in restaurants" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need better food cost control in your restaurant?"
+    text="GastroApp helps restaurants reduce friction, improve visibility and support stronger food cost control."
+  />
+</MainLayout>

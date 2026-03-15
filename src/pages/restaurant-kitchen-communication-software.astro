@@ -1,0 +1,75 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Restaurant Kitchen Communication Software",
+  url: "https://gastroapp.dk/restaurant-kitchen-communication-software",
+  description:
+    "Kitchen communication software for restaurants that need stronger coordination across prep, production and daily operations.",
+};
+---
+
+<MainLayout
+  title="Restaurant Kitchen Communication Software — GastroApp"
+  description="Kitchen communication software for restaurants that need stronger coordination across prep, production and daily operations."
+  pathname="/restaurant-kitchen-communication-software"
+  schema={schema}
+>
+  <PageHero
+    eyebrow="Kitchen Communication"
+    title="Restaurant kitchen communication software"
+    description="GastroApp helps kitchen teams communicate more clearly by connecting coordination directly to operational workflows."
+  />
+
+  <ContentSection
+    title="Kitchen communication works best when tied to the workflow"
+    paragraphs={[
+      "Restaurants often rely on scattered messages, informal updates and manual follow-up to coordinate the kitchen. That creates friction and weakens execution.",
+      "Communication becomes more useful when it lives inside the operational system rather than outside it.",
+      "The goal is not just messaging. The goal is clearer coordination."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What stronger kitchen communication improves"
+    items={[
+      "Clearer shift coordination.",
+      "More reliable prep follow-up.",
+      "Better communication around stock and production.",
+      "Fewer missed updates during service.",
+      "Stronger alignment between managers and kitchen teams.",
+      "A more structured workflow overall."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp connects communication to operations"
+    paragraphs={[
+      "GastroApp includes team communication as part of the broader restaurant workflow, connecting updates to the real operational context.",
+      "That helps reduce noise, improve clarity and make coordination easier to manage every day.",
+      "When communication and execution are connected, operations become more reliable."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/kitchen-management-software", label: "Kitchen Management Software" },
+      { href: "/restaurant-operations-platform", label: "Restaurant Operations Platform" },
+      { href: "/restaurant-production-software", label: "Restaurant Production Software" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need better communication across your kitchen team?"
+    text="GastroApp helps restaurants improve coordination by connecting communication to real kitchen operations."
+  />
+</MainLayout>

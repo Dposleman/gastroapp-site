@@ -1,0 +1,66 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Restaurant Software Aalborg",
+  url: "https://gastroapp.dk/restaurant-software-aalborg",
+  description:
+    "Restaurant software for restaurants in Aalborg focused on kitchen operations, stock control and food waste visibility.",
+};
+---
+
+<MainLayout
+  title="Restaurant Software Aalborg — GastroApp"
+  description="Restaurant software for restaurants in Aalborg focused on kitchen operations, stock control and food waste visibility."
+  pathname="/restaurant-software-aalborg"
+  schema={schema}
+>
+  <PageHero
+    eyebrow="Restaurant Software Aalborg"
+    title="Restaurant software for restaurants in Aalborg"
+    description="GastroApp helps kitchens in Aalborg improve operational clarity across inventory, production, food waste and team coordination."
+  />
+
+  <ContentSection
+    title="Operational clarity matters in growing restaurant teams"
+    paragraphs={[
+      "Restaurants in Aalborg need better visibility over stock, prep, production and daily execution as operations become more demanding.",
+      "Without structured systems, managers spend too much time chasing information manually and teams lose consistency during service and prep.",
+      "Restaurant software should make workflows easier to manage and easier to scale."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What GastroApp improves for restaurants in Aalborg"
+    items={[
+      "Stronger inventory control.",
+      "Clearer kitchen production workflows.",
+      "Food waste monitoring connected to operations.",
+      "Recipe structure and consistency.",
+      "Restaurant event planning support.",
+      "Better team alignment."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related software pages"
+    links={[
+      { href: "/restaurant-software-denmark", label: "Restaurant Software Denmark" },
+      { href: "/restaurant-software-odense", label: "Restaurant Software Odense" },
+      { href: "/restaurant-software-aarhus", label: "Restaurant Software Aarhus" },
+      { href: "/restaurant-software", label: "Restaurant Software" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need restaurant software in Aalborg?"
+    text="GastroApp helps restaurant teams in Aalborg centralize operations and improve daily execution."
+  />
+</MainLayout>

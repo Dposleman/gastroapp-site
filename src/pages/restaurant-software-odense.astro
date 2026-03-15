@@ -1,0 +1,66 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Restaurant Software Odense",
+  url: "https://gastroapp.dk/restaurant-software-odense",
+  description:
+    "Restaurant software for restaurants in Odense focused on inventory, production, food waste and operational coordination.",
+};
+---
+
+<MainLayout
+  title="Restaurant Software Odense — GastroApp"
+  description="Restaurant software for restaurants in Odense focused on inventory, production, food waste and operational coordination."
+  pathname="/restaurant-software-odense"
+  schema={schema}
+>
+  <PageHero
+    eyebrow="Restaurant Software Odense"
+    title="Restaurant software for modern kitchens in Odense"
+    description="GastroApp helps restaurants in Odense centralize inventory, production planning, food waste visibility and team operations in one platform."
+  />
+
+  <ContentSection
+    title="Restaurants in Odense need clearer operational workflows"
+    paragraphs={[
+      "As restaurants in Odense grow in complexity, it becomes harder to manage kitchen workflows through spreadsheets, manual notes and fragmented communication.",
+      "Teams need stronger visibility over stock, production status, prep and food waste in order to operate more consistently.",
+      "Restaurant software should support real operational execution, not just admin."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What GastroApp helps restaurants in Odense improve"
+    items={[
+      "Inventory visibility and stock control.",
+      "Production planning and prep structure.",
+      "Food waste monitoring and loss reduction.",
+      "Recipe consistency across the kitchen team.",
+      "Clearer event preparation workflows.",
+      "Better communication across operations."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related software pages"
+    links={[
+      { href: "/restaurant-software-denmark", label: "Restaurant Software Denmark" },
+      { href: "/restaurant-software-aarhus", label: "Restaurant Software Aarhus" },
+      { href: "/restaurant-software-copenhagen", label: "Restaurant Software Copenhagen" },
+      { href: "/restaurant-software", label: "Restaurant Software" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Looking for restaurant software in Odense?"
+    text="GastroApp helps restaurants in Odense operate with more structure, visibility and control."
+  />
+</MainLayout>
