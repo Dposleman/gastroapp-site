@@ -1,0 +1,61 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import ArticleHero from "../../components/ArticleHero.astro";
+import ArticleSection from "../../components/ArticleSection.astro";
+import RelatedLinks from "../../components/RelatedLinks.astro";
+import SimpleCTA from "../../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="How to Reduce Food Waste in Restaurants — GastroApp"
+  description="A practical guide to reducing food waste in restaurants through better visibility, inventory control and operational structure."
+  pathname="/learn/reduce-food-waste-restaurant"
+>
+  <ArticleHero
+    category="Food Waste"
+    title="How to reduce food waste in restaurants"
+    description="Reducing waste starts with making it visible. Restaurants need operational systems that connect stock, production and waste control."
+  />
+
+  <ArticleSection
+    title="Why food waste is hard to control"
+    paragraphs={[
+      "Food waste is often treated as an isolated problem, but in reality it is usually the result of weak visibility across inventory, prep and production.",
+      "When teams cannot clearly see what is overproduced, underused or poorly tracked, waste becomes harder to reduce in a meaningful way.",
+      "That is why food waste control works best when it is connected to the daily operational workflow."
+    ]}
+  />
+
+  <ArticleSection
+    title="Start with visibility"
+    paragraphs={[
+      "The first step is to make waste visible in a consistent way. Restaurants need to know where loss is happening and how often it repeats.",
+      "This does not only improve reporting. It helps managers make better decisions around purchasing, prep and production planning.",
+      "Visibility turns food waste from a vague concern into an operational metric."
+    ]}
+  />
+
+  <ArticleSection
+    title="Connect waste to inventory and production"
+    paragraphs={[
+      "The most useful waste insights come when waste is linked to inventory and production workflows. That way teams can understand not just what was lost, but why it happened.",
+      "If a kitchen consistently overproduces a specific item, the issue may be production planning rather than purchasing. If ingredients expire too often, the issue may be stock visibility.",
+      "Better systems help restaurants act on those patterns instead of guessing."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-food-waste-software", label: "Restaurant Food Waste Software" },
+      { href: "/restaurant-inventory-software", label: "Restaurant Inventory Software" },
+      { href: "/restaurant-operations-platform", label: "Restaurant Operations Platform" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Want better visibility into food waste?"
+    text="GastroApp helps restaurants connect food waste, inventory and production inside one operational workflow."
+  />
+</MainLayout>

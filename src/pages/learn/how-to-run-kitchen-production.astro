@@ -1,0 +1,61 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import ArticleHero from "../../components/ArticleHero.astro";
+import ArticleSection from "../../components/ArticleSection.astro";
+import RelatedLinks from "../../components/RelatedLinks.astro";
+import SimpleCTA from "../../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="How to Run Kitchen Production More Effectively — GastroApp"
+  description="A practical guide to production planning, prep visibility and better kitchen execution."
+  pathname="/learn/how-to-run-kitchen-production"
+>
+  <ArticleHero
+    category="Production"
+    title="How to run kitchen production more effectively"
+    description="Production planning improves when kitchens have stronger visibility, clearer prep workflows and better operational coordination."
+  />
+
+  <ArticleSection
+    title="Production is where planning meets execution"
+    paragraphs={[
+      "Production is one of the most operationally important parts of a restaurant system. It affects prep, stock usage, team coordination and food waste.",
+      "When production is poorly planned, kitchens feel reactive rather than controlled.",
+      "That leads to overproduction, missed preparation steps and avoidable pressure during service."
+    ]}
+  />
+
+  <ArticleSection
+    title="Create visibility across prep"
+    paragraphs={[
+      "A strong production workflow starts with visibility. Teams should know what needs to be prepared, what is pending and what is already completed.",
+      "That reduces uncertainty and improves accountability across shifts and team members.",
+      "Visibility makes production easier to manage under pressure."
+    ]}
+  />
+
+  <ArticleSection
+    title="Connect production to inventory and recipes"
+    paragraphs={[
+      "Production planning works best when it is linked to recipes and inventory. That ensures teams are producing against real operational context rather than assumptions.",
+      "This helps reduce waste and makes it easier to adjust prep when needs change.",
+      "The strongest production systems are part of a broader kitchen workflow."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-production-software", label: "Restaurant Production Software" },
+      { href: "/kitchen-management-software", label: "Kitchen Management Software" },
+      { href: "/restaurant-operations-platform", label: "Restaurant Operations Platform" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need cleaner kitchen production workflows?"
+    text="GastroApp helps restaurants structure prep and production with better visibility and operational control."
+  />
+</MainLayout>

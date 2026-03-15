@@ -14,4 +14,10 @@
   <url><loc>https://gastroapp.dk/restaurant-software-europe</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://gastroapp.dk/restaurant-software-copenhagen</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://gastroapp.dk/restaurant-software-aarhus</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gastroapp.dk/learn</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://gastroapp.dk/learn/reduce-food-waste-restaurant</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gastroapp.dk/learn/restaurant-inventory-best-practices</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gastroapp.dk/learn/how-to-run-kitchen-production</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gastroapp.dk/learn/restaurant-operational-workflows</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gastroapp.dk/learn/restaurant-prep-list-system</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

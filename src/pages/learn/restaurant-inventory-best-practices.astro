@@ -1,0 +1,61 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import ArticleHero from "../../components/ArticleHero.astro";
+import ArticleSection from "../../components/ArticleSection.astro";
+import RelatedLinks from "../../components/RelatedLinks.astro";
+import SimpleCTA from "../../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Inventory Best Practices — GastroApp"
+  description="Best practices for restaurant inventory management, stock visibility and cleaner operational workflows."
+  pathname="/learn/restaurant-inventory-best-practices"
+>
+  <ArticleHero
+    category="Inventory"
+    title="Restaurant inventory best practices"
+    description="Stronger inventory workflows reduce friction, improve stock visibility and support better kitchen decisions."
+  />
+
+  <ArticleSection
+    title="Inventory is more than stock counting"
+    paragraphs={[
+      "Inventory management is often reduced to counting items, but strong inventory systems do much more than that.",
+      "They help restaurants understand stock status, reduce avoidable waste and support production planning with better information.",
+      "When inventory workflows are fragmented, kitchens lose time and visibility."
+    ]}
+  />
+
+  <ArticleSection
+    title="Keep inventory connected to operations"
+    paragraphs={[
+      "Inventory works best when it is connected to recipes, production and waste control. Otherwise, it becomes a standalone admin task with limited operational value.",
+      "Restaurants need stock visibility in the context of what they are preparing, producing and serving.",
+      "That makes inventory more actionable and more useful across the team."
+    ]}
+  />
+
+  <ArticleSection
+    title="Reduce manual friction"
+    paragraphs={[
+      "Manual entry, scattered spreadsheets and disconnected follow-up processes create avoidable friction.",
+      "A cleaner system helps restaurant teams spend less time chasing information and more time making better decisions.",
+      "The best inventory workflows are reliable, visible and easy to maintain."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-inventory-software", label: "Restaurant Inventory Software" },
+      { href: "/kitchen-management-software", label: "Kitchen Management Software" },
+      { href: "/restaurant-software", label: "Restaurant Software" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need stronger inventory workflows?"
+    text="GastroApp helps restaurants improve inventory visibility and connect stock management to daily operations."
+  />
+</MainLayout>

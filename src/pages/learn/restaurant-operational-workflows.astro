@@ -1,0 +1,61 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import ArticleHero from "../../components/ArticleHero.astro";
+import ArticleSection from "../../components/ArticleSection.astro";
+import RelatedLinks from "../../components/RelatedLinks.astro";
+import SimpleCTA from "../../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Operational Workflows Explained — GastroApp"
+  description="Why operational workflows matter in restaurants and how better structure improves execution."
+  pathname="/learn/restaurant-operational-workflows"
+>
+  <ArticleHero
+    category="Operations"
+    title="Restaurant operational workflows explained"
+    description="Restaurants run better when operational workflows are structured, visible and connected across the kitchen."
+  />
+
+  <ArticleSection
+    title="What operational workflows really mean"
+    paragraphs={[
+      "Operational workflows are the practical systems that connect tasks, decisions and communication inside a restaurant.",
+      "They include recipes, inventory, production, event preparation, waste tracking and team coordination.",
+      "When these workflows are not clearly structured, execution becomes slower and less reliable."
+    ]}
+  />
+
+  <ArticleSection
+    title="Why fragmented workflows create friction"
+    paragraphs={[
+      "Many restaurants rely on a mix of spreadsheets, notes and scattered messages to manage operations. That creates friction because information is spread across too many places.",
+      "The result is weaker visibility, duplicated effort and more pressure on managers to constantly follow up manually.",
+      "Operational structure reduces that friction by giving teams one shared system."
+    ]}
+  />
+
+  <ArticleSection
+    title="Why structure matters"
+    paragraphs={[
+      "Restaurants do not become more efficient only by adding software. They improve when software creates better structure around real workflows.",
+      "That is why the most useful restaurant systems connect inventory, production, waste and communication into one operational environment.",
+      "Structure makes execution more reliable and scaling more realistic."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-operations-platform", label: "Restaurant Operations Platform" },
+      { href: "/restaurant-software", label: "Restaurant Software" },
+      { href: "/kitchen-management-software", label: "Kitchen Management Software" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Want stronger restaurant workflows?"
+    text="GastroApp helps restaurants centralize and structure operational workflows across the kitchen."
+  />
+</MainLayout>

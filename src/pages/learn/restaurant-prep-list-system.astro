@@ -1,0 +1,61 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import ArticleHero from "../../components/ArticleHero.astro";
+import ArticleSection from "../../components/ArticleSection.astro";
+import RelatedLinks from "../../components/RelatedLinks.astro";
+import SimpleCTA from "../../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="How to Build a Better Restaurant Prep List System — GastroApp"
+  description="A guide to building better prep list systems for restaurant teams and kitchen operations."
+  pathname="/learn/restaurant-prep-list-system"
+>
+  <ArticleHero
+    category="Prep Systems"
+    title="How to build a better restaurant prep list system"
+    description="Prep works better when expectations are clear, visibility is strong and the workflow is connected to production and inventory."
+  />
+
+  <ArticleSection
+    title="Prep lists should support execution, not just reminders"
+    paragraphs={[
+      "Many prep lists are treated like informal notes rather than operational tools. That makes them hard to manage consistently.",
+      "A stronger prep list system helps restaurant teams understand what needs to be prepared, when it is needed and how it connects to the wider kitchen workflow.",
+      "Prep becomes easier when visibility and accountability are built into the process."
+    ]}
+  />
+
+  <ArticleSection
+    title="Connect prep to production"
+    paragraphs={[
+      "Prep lists are most effective when they are tied to actual production needs rather than isolated task lists.",
+      "That helps teams avoid unnecessary work, improve timing and reduce confusion during busy shifts.",
+      "The more prep connects to production planning, the more useful it becomes."
+    ]}
+  />
+
+  <ArticleSection
+    title="Use structure to reduce friction"
+    paragraphs={[
+      "Clear operational structure reduces the need for repeated follow-up and makes it easier for teams to stay aligned.",
+      "That is especially important in kitchens where speed and consistency matter every day.",
+      "A better prep system creates more confidence across the team."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related pages"
+    links={[
+      { href: "/restaurant-production-software", label: "Restaurant Production Software" },
+      { href: "/kitchen-management-software", label: "Kitchen Management Software" },
+      { href: "/restaurant-recipe-management-software", label: "Restaurant Recipe Management Software" },
+      { href: "/pricing", label: "GastroApp Pricing" }
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need a better prep workflow in your restaurant?"
+    text="GastroApp helps kitchens move from informal prep lists to more structured operational workflows."
+  />
+</MainLayout>
