@@ -147,26 +147,42 @@ const allSchemas = [...baseSchemas, ...pageSchemas];
     </main>
 
     <footer class="border-t border-white/10 py-14 text-center">
-      <div class="flex flex-col items-center gap-3">
+      <div class="mx-auto flex max-w-4xl flex-col items-center gap-3 px-6">
+        <a
+          href="https://understack.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition hover:opacity-100"
+          aria-label="Visit UnderStack"
+        >
+          <img
+            src="/understack-logo.png"
+            alt="UnderStack"
+            class="h-6 opacity-80"
+          />
+        </a>
 
-        <img
-          src="/understack-logo.png"
-          alt="UnderStack"
-          class="h-6 opacity-80"
-        />
-
-        <p class="text-[11px] uppercase tracking-[0.25em] text-white/40">
-          Developed by
+        <p class="text-[11px] uppercase tracking-[0.28em] text-white/40">
+          Powered by
         </p>
 
-        <p class="text-sm font-semibold text-white/90">
-          UnderStack Software Engineering
+        <p class="text-base font-semibold uppercase tracking-[0.22em] text-white/95">
+          UnderStack
         </p>
 
-        <p class="text-xs text-white/40">
+        <div class="flex flex-col items-center gap-1 text-sm text-white/60">
+          <p>AI Systems</p>
+          <p>Software Engineering</p>
+          <p>Modern Infrastructure</p>
+        </div>
+
+        <p class="pt-1 text-xs uppercase tracking-[0.22em] text-white/35">
+          Built in Denmark
+        </p>
+
+        <p class="pt-1 text-xs text-white/40">
           © {new Date().getFullYear()} UnderStack. All rights reserved.
         </p>
-
       </div>
     </footer>
   </body>
