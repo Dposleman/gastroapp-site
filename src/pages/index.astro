@@ -1,46 +1,66 @@
 ---
-import MainLayout from "../../layouts/MainLayout.astro";
-import PageHero from "../../components/PageHero.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import ProblemSolution from "../components/ProblemSolution.astro";
+import ProductShowcase from "../components/ProductShowcase.astro";
+import Features from "../components/Features.astro";
+import HowItWorks from "../components/HowItWorks.astro";
+import Benefits from "../components/Benefits.astro";
+import LearnSection from "../components/LearnSection.astro";
+import DenmarkSection from "../components/DenmarkSection.astro";
+import ContactSection from "../components/ContactSection.astro";
+import Pricing from "../components/Pricing.astro";
+import Faq from "../components/Faq.astro";
+import CTA from "../components/CTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "GastroApp",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description:
+    "Modern restaurant operations software for recipes, inventory, production planning, food waste, events and team coordination.",
+  url: "https://gastroapp.dk/",
+  offers: [
+    {
+      "@type": "Offer",
+      price: "1250",
+      priceCurrency: "DKK",
+      name: "Starter",
+    },
+    {
+      "@type": "Offer",
+      price: "1500",
+      priceCurrency: "DKK",
+      name: "Most Popular",
+    },
+    {
+      "@type": "Offer",
+      price: "1975",
+      priceCurrency: "DKK",
+      name: "Premium",
+    },
+  ],
+};
 ---
 
 <MainLayout
-  title="Restaurant Operations Guides — GastroApp"
-  description="Guides on inventory, food waste reduction, production planning and kitchen operations."
-  pathname="/learn"
+  title="GastroApp — Restaurant Operations Platform"
+  description="Modern restaurant operations software for recipes, inventory, production planning, food waste, events and team coordination."
+  pathname="/"
+  schema={schema}
 >
-
-<PageHero
-  eyebrow="Learn"
-  title="Restaurant operations guides"
-  description="Explore practical resources on kitchen workflows, inventory control, production planning and food waste reduction."
-/>
-
-<section class="mx-auto max-w-6xl px-6 pb-24">
-
-<div class="grid gap-6 md:grid-cols-2">
-
-<a href="/learn/reduce-food-waste-restaurant" class="premium-card p-6">
-<h2 class="text-xl font-semibold">How to reduce food waste in restaurants</h2>
-<p class="mt-3 text-white/70">Make waste visible and reduce avoidable losses.</p>
-</a>
-
-<a href="/learn/restaurant-inventory-best-practices" class="premium-card p-6">
-<h2 class="text-xl font-semibold">Restaurant inventory best practices</h2>
-<p class="mt-3 text-white/70">Improve stock visibility and operational control.</p>
-</a>
-
-<a href="/learn/how-to-run-kitchen-production" class="premium-card p-6">
-<h2 class="text-xl font-semibold">How to run kitchen production effectively</h2>
-<p class="mt-3 text-white/70">Prep planning and kitchen production workflows.</p>
-</a>
-
-<a href="/learn/restaurant-operational-workflows" class="premium-card p-6">
-<h2 class="text-xl font-semibold">Restaurant operational workflows explained</h2>
-<p class="mt-3 text-white/70">How structured workflows improve execution.</p>
-</a>
-
-</div>
-
-</section>
-
+  <Hero />
+  <ProblemSolution />
+  <ProductShowcase />
+  <Features />
+  <HowItWorks />
+  <Benefits />
+  <LearnSection />
+  <ContactSection />
+  <DenmarkSection />
+  <Pricing />
+  <Faq />
+  <CTA />
 </MainLayout>
