@@ -5,17 +5,48 @@ interface Props {
   title?: string;
   description?: string;
   pathname?: string;
+  schema?: Record<string, any> | Record<string, any>[];
 }
 
 const {
   title = "GastroApp — Restaurant Operations Platform",
   description = "Restaurant operations platform for kitchen management, inventory, production planning and team coordination.",
   pathname = "/",
+  schema,
 } = Astro.props;
 
 const siteUrl = "https://gastroapp.dk";
 const pageUrl = new URL(pathname, siteUrl).toString();
 const ogImage = `${siteUrl}/og-image.png`;
+
+const baseSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "GastroApp",
+    url: siteUrl,
+    logo: `${siteUrl}/logo.png`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "GastroApp",
+    url: siteUrl,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${siteUrl}/learn`,
+      "query-input": "required name=search_term_string",
+    },
+  },
+];
+
+const pageSchemas = schema
+  ? Array.isArray(schema)
+    ? schema
+    : [schema]
+  : [];
+
+const allSchemas = [...baseSchemas, ...pageSchemas];
 ---
 
 <!doctype html>
@@ -45,6 +76,12 @@ const ogImage = `${siteUrl}/og-image.png`;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+
+    {
+      allSchemas.map((item) => (
+        <script type="application/ld+json" set:html={JSON.stringify(item)} />
+      ))
+    }
   </head>
 
   <body class="min-h-screen text-white antialiased">

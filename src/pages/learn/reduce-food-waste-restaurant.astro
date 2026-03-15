@@ -4,12 +4,36 @@ import ArticleHero from "../../components/ArticleHero.astro";
 import ArticleSection from "../../components/ArticleSection.astro";
 import RelatedLinks from "../../components/RelatedLinks.astro";
 import SimpleCTA from "../../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How to reduce food waste in restaurants",
+  description:
+    "A practical guide to reducing food waste in restaurants through better visibility, inventory control and operational structure.",
+  author: {
+    "@type": "Organization",
+    name: "GastroApp",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "GastroApp",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://gastroapp.dk/logo.png",
+    },
+  },
+  mainEntityOfPage: "https://gastroapp.dk/learn/reduce-food-waste-restaurant",
+  datePublished: "2026-03-15",
+  dateModified: "2026-03-15",
+};
 ---
 
 <MainLayout
   title="How to Reduce Food Waste in Restaurants — GastroApp"
   description="A practical guide to reducing food waste in restaurants through better visibility, inventory control and operational structure."
   pathname="/learn/reduce-food-waste-restaurant"
+  schema={schema}
 >
   <ArticleHero
     category="Food Waste"

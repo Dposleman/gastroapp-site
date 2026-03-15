@@ -4,12 +4,45 @@ import PageHero from "../components/PageHero.astro";
 import Pricing from "../components/Pricing.astro";
 import SimpleCTA from "../components/SimpleCTA.astro";
 import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "GastroApp",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  url: "https://gastroapp.dk/pricing",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Starter",
+      price: "1250",
+      priceCurrency: "DKK",
+      availability: "https://schema.org/InStock",
+    },
+    {
+      "@type": "Offer",
+      name: "Most Popular",
+      price: "1500",
+      priceCurrency: "DKK",
+      availability: "https://schema.org/InStock",
+    },
+    {
+      "@type": "Offer",
+      name: "Premium",
+      price: "1975",
+      priceCurrency: "DKK",
+      availability: "https://schema.org/InStock",
+    },
+  ],
+};
 ---
 
 <MainLayout
   title="GastroApp Pricing — Restaurant Operations Software"
   description="Simple monthly pricing for restaurants that want better operational control across recipes, inventory, production and team coordination."
   pathname="/pricing"
+  schema={schema}
 >
   <PageHero
     eyebrow="Pricing"

@@ -12,12 +12,44 @@ import ContactSection from "../components/ContactSection.astro";
 import Pricing from "../components/Pricing.astro";
 import Faq from "../components/Faq.astro";
 import CTA from "../components/CTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "GastroApp",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description:
+    "Modern restaurant operations software for recipes, inventory, production planning, food waste, events and team coordination.",
+  url: "https://gastroapp.dk/",
+  offers: [
+    {
+      "@type": "Offer",
+      price: "1250",
+      priceCurrency: "DKK",
+      name: "Starter",
+    },
+    {
+      "@type": "Offer",
+      price: "1500",
+      priceCurrency: "DKK",
+      name: "Most Popular",
+    },
+    {
+      "@type": "Offer",
+      price: "1975",
+      priceCurrency: "DKK",
+      name: "Premium",
+    },
+  ],
+};
 ---
 
 <MainLayout
   title="GastroApp — Restaurant Operations Platform"
   description="Modern restaurant operations software for recipes, inventory, production planning, food waste, events and team coordination."
   pathname="/"
+  schema={schema}
 >
   <Hero />
   <ProblemSolution />

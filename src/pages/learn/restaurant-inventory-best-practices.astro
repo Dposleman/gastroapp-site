@@ -4,12 +4,36 @@ import ArticleHero from "../../components/ArticleHero.astro";
 import ArticleSection from "../../components/ArticleSection.astro";
 import RelatedLinks from "../../components/RelatedLinks.astro";
 import SimpleCTA from "../../components/SimpleCTA.astro";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Restaurant inventory best practices",
+  description:
+    "Best practices for restaurant inventory management, stock visibility and cleaner operational workflows.",
+  author: {
+    "@type": "Organization",
+    name: "GastroApp",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "GastroApp",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://gastroapp.dk/logo.png",
+    },
+  },
+  mainEntityOfPage: "https://gastroapp.dk/learn/restaurant-inventory-best-practices",
+  datePublished: "2026-03-15",
+  dateModified: "2026-03-15",
+};
 ---
 
 <MainLayout
   title="Restaurant Inventory Best Practices — GastroApp"
   description="Best practices for restaurant inventory management, stock visibility and cleaner operational workflows."
   pathname="/learn/restaurant-inventory-best-practices"
+  schema={schema}
 >
   <ArticleHero
     category="Inventory"
