@@ -1,0 +1,75 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Software Platform — GastroApp"
+  description="Modern restaurant software platform for kitchen operations, inventory control, food waste management, production planning and team coordination."
+  pathname="/restaurant-software"
+>
+  <PageHero
+    eyebrow="Restaurant Software"
+    title="Restaurant software built for modern kitchen operations"
+    description="GastroApp helps restaurants manage recipes, inventory, production, events and team coordination in one structured operational platform."
+  />
+
+  <ContentSection
+    title="Restaurant operations are becoming more complex"
+    paragraphs={[
+      "Modern restaurant teams manage far more complexity than before. Inventory must be tracked more precisely, teams need clearer coordination and kitchens need better operational visibility.",
+      "Many restaurants still rely on spreadsheets, fragmented tools or manual workflows. These systems break down as restaurants grow or when operations become more demanding.",
+      "Restaurant software should simplify operations, not add more complexity."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What modern restaurant software should provide"
+    items={[
+      "Clear visibility across kitchen operations.",
+      "Inventory control connected to production and recipes.",
+      "Food waste monitoring to reduce operational losses.",
+      "Structured production planning for prep workflows.",
+      "Operational coordination across kitchen teams.",
+      "Centralized communication and task tracking."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp connects the entire kitchen workflow"
+    paragraphs={[
+      "GastroApp was designed specifically for restaurant operations, not generic business workflows. It brings together the core systems that kitchens rely on every day.",
+      "Recipes, inventory, production planning, food waste control, events and team communication all live inside one structured operational platform.",
+      "This makes it easier for restaurant teams to maintain control as operations grow."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="Core operational systems included in GastroApp"
+    items={[
+      "Recipe management system",
+      "Restaurant inventory control",
+      "Kitchen production planning",
+      "Food waste monitoring",
+      "Restaurant event preparation tools",
+      "Team communication platform"
+    ]}
+  />
+
+  <ContentSection
+    title="AI-assisted restaurant software"
+    paragraphs={[
+      "GastroApp includes AI-assisted features designed to reduce operational friction and improve kitchen workflows.",
+      "The AI receipt reader can import supplier receipts directly into stock workflows. AI learning helps the system adapt to operational patterns over time.",
+      "The AI plating design feature supports creative presentation ideas for restaurants that want to combine operational discipline with culinary innovation."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Looking for modern restaurant software?"
+    text="GastroApp helps restaurants move from fragmented workflows to a structured operations platform designed for modern kitchens."
+  />
+</MainLayout>
