@@ -7,15 +7,15 @@ import Features from "../components/Features.astro";
 import HowItWorks from "../components/HowItWorks.astro";
 import Benefits from "../components/Benefits.astro";
 import DenmarkSection from "../components/DenmarkSection.astro";
+import ContactSection from "../components/ContactSection.astro";
 import Pricing from "../components/Pricing.astro";
 import Faq from "../components/Faq.astro";
 import CTA from "../components/CTA.astro";
-import ContactSection from "../components/ContactSection.astro";
 ---
 
 <MainLayout
   title="GastroApp — Restaurant Operations Platform"
-  description="Modern restaurant operations software for recipes, inventory, production planning, events and team coordination."
+  description="Modern restaurant operations software for recipes, inventory, production planning, food waste, events and team coordination."
   pathname="/"
 >
   <Hero />
@@ -24,9 +24,9 @@ import ContactSection from "../components/ContactSection.astro";
   <Features />
   <HowItWorks />
   <Benefits />
+  <ContactSection />
   <DenmarkSection />
   <Pricing />
   <Faq />
   <CTA />
 </MainLayout>
-<ContactSection />

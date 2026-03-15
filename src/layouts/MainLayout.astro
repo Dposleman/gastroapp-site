@@ -51,9 +51,9 @@ const ogImage = `${siteUrl}/og-image.png`;
     <div class="fixed inset-0 -z-20 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.10),transparent_28%),radial-gradient(circle_at_80%_10%,rgba(59,130,246,0.10),transparent_24%),radial-gradient(circle_at_20%_90%,rgba(168,85,247,0.08),transparent_28%),linear-gradient(180deg,#050816_0%,#060914_100%)]"></div>
     <div class="fixed inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:radial-gradient(circle_at_center,black,transparent_80%)]"></div>
 
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/70 backdrop-blur-xl">
-      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 sm:py-5">
-        <div class="flex min-w-0 items-center gap-3">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/80 backdrop-blur-xl">
+      <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-5">
+        <div class="flex items-center justify-between gap-3">
           <a href="/" class="flex min-w-0 items-center gap-3">
             <div class="glass-card flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/10 shadow-[0_0_30px_rgba(34,211,238,0.10)]">
               <img src="/logo.png" alt="GastroApp logo" class="h-7 w-7 object-contain" />
@@ -67,22 +67,38 @@ const ogImage = `${siteUrl}/og-image.png`;
               </div>
             </div>
           </a>
+
+          <div class="flex items-center gap-2">
+            <a
+              href="#contact"
+              class="hidden rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/8 sm:inline-flex"
+            >
+              Contact
+            </a>
+
+            <a
+              href="https://app.gastroapp.dk/login"
+              class="shrink-0 rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:border-cyan-300/30 hover:bg-cyan-400/15"
+            >
+              Login
+            </a>
+          </div>
         </div>
 
-        <div class="flex items-center gap-3">
-          <nav class="hidden items-center gap-8 md:flex">
-            <a href="/restaurant-software-denmark" class="text-sm text-white/70 transition hover:text-white">Denmark</a>
-            <a href="/restaurant-inventory-software" class="text-sm text-white/70 transition hover:text-white">Inventory</a>
-            <a href="/pricing" class="text-sm text-white/70 transition hover:text-white">Pricing</a>
-          </nav>
-
-          <a
-            href="https://app.gastroapp.dk/login"
-            class="shrink-0 rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:border-cyan-300/30 hover:bg-cyan-400/15"
-          >
-            Login
-          </a>
+        <div class="mt-4 flex gap-2 overflow-x-auto pb-1 md:hidden">
+          <a href="/restaurant-software-denmark" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/8">Denmark</a>
+          <a href="/restaurant-inventory-software" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/8">Inventory</a>
+          <a href="/pricing" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/8">Pricing</a>
+          <a href="#contact" class="shrink-0 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200 transition hover:bg-cyan-400/15">Contact</a>
         </div>
+
+        <nav class="mt-4 hidden items-center gap-8 md:flex">
+          <a href="/restaurant-software" class="text-sm text-white/70 transition hover:text-white">Software</a>
+          <a href="/restaurant-software-denmark" class="text-sm text-white/70 transition hover:text-white">Denmark</a>
+          <a href="/restaurant-inventory-software" class="text-sm text-white/70 transition hover:text-white">Inventory</a>
+          <a href="/pricing" class="text-sm text-white/70 transition hover:text-white">Pricing</a>
+          <a href="#contact" class="text-sm text-white/70 transition hover:text-white">Contact</a>
+        </nav>
       </div>
     </header>
 
