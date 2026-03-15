@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import ContentSection from "../components/ContentSection.astro";
 import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
 import SimpleCTA from "../components/SimpleCTA.astro";
 ---
 
@@ -65,6 +66,16 @@ import SimpleCTA from "../components/SimpleCTA.astro";
       "GastroApp includes AI-assisted features designed to reduce operational friction and improve kitchen workflows.",
       "The AI receipt reader can import supplier receipts directly into stock workflows. AI learning helps the system adapt to operational patterns over time.",
       "The AI plating design feature supports creative presentation ideas for restaurants that want to combine operational discipline with culinary innovation."
+    ]}
+  />
+
+  <RelatedLinks
+    title="Related guides and pages"
+    links={[
+      { href: "/learn", label: "Explore the Learn hub" },
+      { href: "/learn/restaurant-inventory-best-practices", label: "Restaurant inventory best practices" },
+      { href: "/learn/reduce-food-waste-restaurant", label: "How to reduce food waste in restaurants" },
+      { href: "/pricing", label: "GastroApp Pricing" }
     ]}
   />
 
