@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Event Management Software — GastroApp"
+  description="Restaurant event management software for planning, preparation and operational coordination."
+  pathname="/restaurant-event-management-software"
+>
+  <PageHero
+    eyebrow="Event Management"
+    title="Restaurant event management software for better preparation"
+    description="Plan restaurant events with more clarity, stronger coordination and a cleaner operational workflow."
+  />
+
+  <ContentSection
+    title="Restaurant events increase operational complexity"
+    paragraphs={[
+      "Events require more planning, more coordination and less room for error. When event preparation lives in scattered notes and informal communication, execution becomes risky.",
+      "Restaurants need a better way to coordinate event prep, production requirements and team communication inside one structured workflow.",
+      "Event management software should reduce uncertainty and improve readiness."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What event management software should help with"
+    items={[
+      "Clearer preparation workflows.",
+      "Better visibility across event tasks.",
+      "Stronger coordination between kitchen and management.",
+      "Connection between event prep and production.",
+      "Less friction during execution.",
+      "A more reliable operational process."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp helps restaurants prepare with more control"
+    paragraphs={[
+      "GastroApp supports restaurant event workflows as part of the broader operations platform, connecting planning to kitchen execution and team communication.",
+      "This helps restaurants reduce friction and improve confidence during more demanding service scenarios.",
+      "For events, operational clarity matters even more than usual."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need better event preparation workflows?"
+    text="GastroApp helps restaurants manage events with more structure, visibility and coordination."
+  />
+</MainLayout>

@@ -1,0 +1,45 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Software Copenhagen — GastroApp"
+  description="Restaurant software for Copenhagen restaurants that want stronger kitchen operations and better visibility."
+  pathname="/restaurant-software-copenhagen"
+>
+  <PageHero
+    eyebrow="Restaurant Software Copenhagen"
+    title="Restaurant software for kitchens in Copenhagen"
+    description="GastroApp helps restaurants in Copenhagen manage recipes, inventory, food waste, production and communication in one structured platform."
+  />
+
+  <ContentSection
+    title="Copenhagen restaurants need stronger operational clarity"
+    paragraphs={[
+      "Restaurants in Copenhagen often operate at high standards with limited room for operational inefficiency. That makes visibility, structure and coordination especially important.",
+      "GastroApp helps restaurant teams centralize the workflows that usually become fragmented across multiple tools.",
+      "This creates a cleaner operational system for day-to-day execution."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What GastroApp helps Copenhagen restaurants improve"
+    items={[
+      "Inventory control.",
+      "Food waste monitoring.",
+      "Recipe structure.",
+      "Production planning.",
+      "Event preparation.",
+      "Team communication."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need better restaurant software in Copenhagen?"
+    text="GastroApp helps kitchens in Copenhagen operate with more structure, visibility and control."
+  />
+</MainLayout>

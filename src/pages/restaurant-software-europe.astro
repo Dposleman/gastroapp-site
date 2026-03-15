@@ -1,0 +1,45 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Software Europe — GastroApp"
+  description="Restaurant software for Europe focused on kitchen operations, inventory control, food waste management and AI-assisted workflows."
+  pathname="/restaurant-software-europe"
+>
+  <PageHero
+    eyebrow="Restaurant Software Europe"
+    title="Restaurant software for modern kitchens across Europe"
+    description="GastroApp helps restaurants centralize operations, improve visibility and build stronger workflows for modern kitchen teams."
+  />
+
+  <ContentSection
+    title="European restaurants need stronger operational systems"
+    paragraphs={[
+      "Restaurants across Europe are facing higher operational expectations. Teams need more structure, better visibility and cleaner workflows to maintain consistency and control.",
+      "When operations depend on fragmented tools, kitchens lose time and managers lose visibility.",
+      "Restaurant software should help restaurants scale operational discipline, not just digitize paperwork."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="Why GastroApp fits modern restaurant operations"
+    items={[
+      "Operational structure across recipes, stock and production.",
+      "Food waste visibility and better cost control.",
+      "AI-assisted workflows for modern teams.",
+      "Cleaner communication across operations.",
+      "Better preparation for events and service.",
+      "Scalable workflows for growing restaurant groups."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Looking for restaurant software in Europe?"
+    text="GastroApp helps restaurants move toward cleaner, more structured and more scalable operations."
+  />
+</MainLayout>

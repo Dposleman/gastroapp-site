@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Recipe Management Software — GastroApp"
+  description="Recipe management software for restaurants that need consistency, structure and operational clarity."
+  pathname="/restaurant-recipe-management-software"
+>
+  <PageHero
+    eyebrow="Recipe Management"
+    title="Restaurant recipe management software for consistent execution"
+    description="Organize recipes, standardize production and create a stronger operational foundation for your kitchen team."
+  />
+
+  <ContentSection
+    title="Recipe structure matters more than most restaurants think"
+    paragraphs={[
+      "Recipes are not just culinary documents. They are operational instructions that affect prep, stock, production and service consistency.",
+      "When recipes are poorly structured, teams lose time, execution becomes inconsistent and production planning becomes harder.",
+      "Recipe management software should support both culinary consistency and operational discipline."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What recipe management software should improve"
+    items={[
+      "Consistency across the kitchen team.",
+      "Clearer production guidance.",
+      "Stronger connection between recipes and inventory.",
+      "Better scaling across locations or teams.",
+      "Less confusion during prep and service.",
+      "A more structured operational workflow."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp connects recipes to real operations"
+    paragraphs={[
+      "GastroApp treats recipe management as part of the broader restaurant workflow, not as an isolated content system.",
+      "Recipes connect to inventory, production and kitchen execution, helping teams make better decisions and maintain stronger consistency.",
+      "That makes recipe management more useful as the business grows."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need stronger recipe management in your restaurant?"
+    text="GastroApp helps kitchens standardize recipes and turn them into a stronger operational foundation."
+  />
+</MainLayout>

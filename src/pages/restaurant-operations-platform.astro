@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Operations Platform — GastroApp"
+  description="Restaurant operations platform for recipes, inventory, food waste, production, events and team coordination."
+  pathname="/restaurant-operations-platform"
+>
+  <PageHero
+    eyebrow="Operations Platform"
+    title="A restaurant operations platform built for modern kitchens"
+    description="GastroApp centralizes the systems restaurants need to run recipes, inventory, production, food waste, events and communication in one operational workspace."
+  />
+
+  <ContentSection
+    title="Restaurants need an operational system, not more fragmented tools"
+    paragraphs={[
+      "Most restaurant teams do not need another disconnected app. They need an operations platform that helps multiple workflows work together cleanly.",
+      "When recipes, stock, production, waste and team coordination live in different places, execution becomes harder and visibility becomes weaker.",
+      "A restaurant operations platform should create alignment across the whole kitchen system."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What an operations platform should bring together"
+    items={[
+      "Recipe management.",
+      "Inventory control.",
+      "Production planning.",
+      "Food waste monitoring.",
+      "Event preparation.",
+      "Team communication."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp is designed as one operational workspace"
+    paragraphs={[
+      "GastroApp brings together the operational areas that restaurants manage every day. Instead of forcing teams to switch between multiple tools, it creates one shared system for the kitchen workflow.",
+      "That helps improve execution, reduce friction and make management decisions easier.",
+      "The platform is built to support both smaller restaurants and more complex operations."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need a better restaurant operations platform?"
+    text="GastroApp helps restaurants centralize operational workflows into one structured system."
+  />
+</MainLayout>

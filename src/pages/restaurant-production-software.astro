@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Production Software — GastroApp"
+  description="Restaurant production software for prep planning, production visibility and more reliable kitchen execution."
+  pathname="/restaurant-production-software"
+>
+  <PageHero
+    eyebrow="Production Software"
+    title="Restaurant production software for prep and execution"
+    description="Plan production more reliably, coordinate prep with more clarity and connect production workflows to inventory, recipes and team operations."
+  />
+
+  <ContentSection
+    title="Production planning is critical to kitchen performance"
+    paragraphs={[
+      "Production is where restaurant planning becomes operational reality. If prep is disorganized or poorly tracked, the impact spreads into stock, waste, service quality and team coordination.",
+      "Many restaurants still manage production with informal notes or disconnected tools. This creates friction and makes it harder to scale operations cleanly.",
+      "Restaurant production software should make production more visible, more structured and easier to manage."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What better production software helps with"
+    items={[
+      "More reliable prep planning.",
+      "Clearer production visibility.",
+      "Stronger connection between recipes and execution.",
+      "Less overproduction and avoidable waste.",
+      "Better coordination across shifts and teams.",
+      "Improved operational consistency."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp connects production to the rest of operations"
+    paragraphs={[
+      "GastroApp does not treat production as an isolated function. It connects production planning to recipes, inventory, food waste and team coordination.",
+      "That means production decisions happen inside a broader operational context, helping kitchens make better decisions with less friction.",
+      "The result is a cleaner and more scalable production workflow for restaurants."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Need stronger production planning in your restaurant?"
+    text="GastroApp helps restaurant teams structure prep and production with better visibility and more reliable execution."
+  />
+</MainLayout>

@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Food Waste Software — GastroApp"
+  description="Restaurant food waste software for reducing avoidable losses and improving operational visibility."
+  pathname="/restaurant-food-waste-software"
+>
+  <PageHero
+    eyebrow="Food Waste Software"
+    title="Restaurant food waste software with operational visibility"
+    description="Track food waste more clearly, reduce avoidable losses and connect waste control to inventory, production and kitchen execution."
+  />
+
+  <ContentSection
+    title="Food waste is both a cost issue and an operational issue"
+    paragraphs={[
+      "Food waste affects margin, purchasing, prep planning and sustainability. Restaurants that cannot see waste clearly often struggle to reduce it in a meaningful way.",
+      "Many teams know waste is a problem, but they do not have the operational system to connect waste to daily execution.",
+      "Food waste software should make losses visible in a way that supports better action."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What food waste software should help restaurants do"
+    items={[
+      "Monitor food waste with more structure.",
+      "Reduce preventable operational loss.",
+      "Connect waste to stock and production decisions.",
+      "Improve visibility for kitchen managers.",
+      "Support more sustainable workflows.",
+      "Build stronger operational discipline."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp includes food waste control inside the workflow"
+    paragraphs={[
+      "GastroApp treats food waste as part of a broader operations platform. It connects waste visibility to stock, recipes, production and execution.",
+      "That makes the information more actionable because teams can see waste in the context of what they are actually doing every day.",
+      "This helps restaurants reduce avoidable losses while improving operational control."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Want better control over food waste?"
+    text="GastroApp helps restaurants reduce waste through clearer workflows, better visibility and stronger operational structure."
+  />
+</MainLayout>

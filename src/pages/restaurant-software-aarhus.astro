@@ -1,0 +1,45 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Restaurant Software Aarhus — GastroApp"
+  description="Restaurant software for Aarhus restaurants focused on kitchen operations, inventory control and stronger restaurant workflows."
+  pathname="/restaurant-software-aarhus"
+>
+  <PageHero
+    eyebrow="Restaurant Software Aarhus"
+    title="Restaurant software for modern kitchens in Aarhus"
+    description="GastroApp helps restaurants in Aarhus centralize recipes, inventory, production, food waste and team coordination in one operational system."
+  />
+
+  <ContentSection
+    title="Restaurants in Aarhus need better operational systems"
+    paragraphs={[
+      "As restaurants in Aarhus grow in complexity, operational structure becomes more important. Teams need stronger workflows for stock, prep, food waste and communication.",
+      "GastroApp helps restaurants organize these workflows in one place so teams can execute with more clarity and management can maintain better visibility.",
+      "The platform is built for practical operational control, not generic admin."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What GastroApp helps Aarhus restaurants improve"
+    items={[
+      "Recipe structure and consistency.",
+      "Inventory visibility.",
+      "Production planning.",
+      "Food waste control.",
+      "Event coordination.",
+      "Team communication."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Looking for restaurant software in Aarhus?"
+    text="GastroApp helps kitchens in Aarhus move toward cleaner and more structured operations."
+  />
+</MainLayout>

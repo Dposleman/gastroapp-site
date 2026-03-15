@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ContentSection from "../components/ContentSection.astro";
+import FeatureBulletGrid from "../components/FeatureBulletGrid.astro";
+import SimpleCTA from "../components/SimpleCTA.astro";
+---
+
+<MainLayout
+  title="Kitchen Management Software — GastroApp"
+  description="Kitchen management software for restaurants that need stronger coordination, production visibility and operational control."
+  pathname="/kitchen-management-software"
+>
+  <PageHero
+    eyebrow="Kitchen Management Software"
+    title="Kitchen management software for modern restaurant teams"
+    description="GastroApp helps kitchens manage recipes, prep, production, inventory, food waste and communication with more structure and less operational friction."
+  />
+
+  <ContentSection
+    title="Kitchens need better operational systems"
+    paragraphs={[
+      "Running a modern kitchen requires much more than storing recipes or checking stock. Teams need a way to coordinate prep, communicate clearly and maintain operational visibility during busy service cycles.",
+      "Without structured systems, restaurants depend on scattered notes, spreadsheets and informal communication. That makes execution less reliable and growth harder to manage.",
+      "Kitchen management software should support the real operational workflow of the team."
+    ]}
+  />
+
+  <FeatureBulletGrid
+    title="What kitchen management software should improve"
+    items={[
+      "Daily kitchen coordination and execution.",
+      "Visibility over prep, stock and production status.",
+      "Food waste monitoring connected to operational reality.",
+      "More reliable communication across the team.",
+      "Less friction caused by disconnected tools.",
+      "Stronger control as kitchen operations scale."
+    ]}
+  />
+
+  <ContentSection
+    title="GastroApp is built around kitchen workflow"
+    paragraphs={[
+      "GastroApp brings together the operational systems kitchens actually need: recipes, inventory, production planning, events, food waste control and team communication.",
+      "This makes it easier for chefs, managers and support teams to stay aligned and make decisions with better information.",
+      "The goal is not just digitalization. The goal is operational clarity."
+    ]}
+  />
+
+  <SimpleCTA
+    title="Looking for better kitchen management software?"
+    text="GastroApp helps restaurant teams operate with more structure, more visibility and better execution."
+  />
+</MainLayout>
